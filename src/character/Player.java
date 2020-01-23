@@ -4,9 +4,14 @@ import dnd.Die;
 
 public class Player extends Character{
 
+    private int level = 1;
+
     public Player(String name, int armorClass, int strength, int dexterity, int constitution, int intelligence, int wisdom, int charisma, String hitDie) {
         super(name, armorClass, strength, dexterity, constitution, intelligence, wisdom, charisma);
         setHitPoints(Die.rollDie(hitDie)+constitution);
+        if(super.getHitPoints() < 5)
+            super.setHitPoints(5);
+        super.setMaxHitPoints(super.getHitPoints());
     }
 
     public void shortsword(Character other) {
@@ -22,6 +27,14 @@ public class Player extends Character{
         else { //bite misses
             System.out.println(getName() + " attempts to slash (shortsword) " + other.getName() + " but misses.");
         }
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
     }
 
     @Override

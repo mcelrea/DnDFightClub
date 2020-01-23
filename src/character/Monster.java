@@ -12,6 +12,7 @@ public abstract class Monster extends Character {
         super(name, armorClass, strength, dexterity,constitution,
                 intelligence,wisdom,charisma);
         super.setHitPoints(Die.rollDie(hitDie));
+        super.setMaxHitPoints(super.getHitPoints());
     }
 
     public double getCr() {

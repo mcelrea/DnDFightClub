@@ -4,6 +4,7 @@ public abstract class Character {
     private String name;
     private int armorClass;
     private int hitPoints;
+    private int maxHitPoints;
     private int strength;
     private int dexterity;
     private int constitution;
@@ -98,6 +99,14 @@ public abstract class Character {
 
     public void setCharisma(int charisma) {
         this.charisma = charisma;
+    }
+
+    public int getMaxHitPoints() {
+        return maxHitPoints;
+    }
+
+    public void setMaxHitPoints(int maxHitPoints) {
+        this.maxHitPoints = maxHitPoints;
     }
 
     @Override
