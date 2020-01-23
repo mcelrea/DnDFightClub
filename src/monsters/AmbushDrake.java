@@ -31,4 +31,8 @@ public class AmbushDrake extends Monster {
         }
     }
 
+    @Override
+    public void attack(Character other) {
+
+    }
 }

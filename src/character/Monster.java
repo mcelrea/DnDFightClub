@@ -2,7 +2,9 @@ package character;
 
 import dnd.Die;
 
-public class Monster extends Character {
+public abstract class Monster extends Character {
+
+    private double cr = -1;
 
     public Monster(String name, int armorClass, int strength,
                    int dexterity, int constitution, int intelligence,
@@ -10,5 +12,13 @@ public class Monster extends Character {
         super(name, armorClass, strength, dexterity,constitution,
                 intelligence,wisdom,charisma);
         super.setHitPoints(Die.rollDie(hitDie));
+    }
+
+    public double getCr() {
+        return cr;
+    }
+
+    public void setCr(double cr) {
+        this.cr = cr;
     }
 }

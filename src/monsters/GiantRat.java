@@ -16,7 +16,14 @@ public class GiantRat extends Monster {
                 +0,
                 -3,
                 "2d6");
+        super.setCr(0.125);
     }
+
+    @Override
+    public void attack(Character other) {
+        bite(other);
+    }
+
 
     public void bite(Character other) {
         //DO NOT CHANGE, Same for EVERY Monster

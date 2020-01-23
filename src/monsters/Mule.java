@@ -26,4 +26,9 @@ public class Mule extends Monster {
             System.out.println(getName() + " attempts to use its hooves on " + other.getName() + " but misses.");
         }
     }
+
+    @Override
+    public void attack(Character other) {
+
+    }
 }

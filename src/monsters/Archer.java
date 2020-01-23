@@ -49,4 +49,9 @@ public class Archer extends Monster {
             System.out.println(getName() + " attempts to Longbow " + other.getName() + ", but misses.");
         }
     }
+
+    @Override
+    public void attack(Character other) {
+
+    }
 }

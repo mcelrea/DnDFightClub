@@ -32,4 +32,9 @@ public class BloodHawk extends Monster {
             System.out.println(getName() + " attempts to peck " + other.getName() + " but misses.");
         }
     }
+
+    @Override
+    public void attack(Character other) {
+
+    }
 }

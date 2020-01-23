@@ -23,4 +23,9 @@ public class GiantCrab extends Monster {
             System.out.println(getName() + " attempts claw " + other.getName() + " but misses.");
         }
     }
+
+    @Override
+    public void attack(Character other) {
+
+    }
 }

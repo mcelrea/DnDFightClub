@@ -16,6 +16,7 @@ public class Cultist extends Monster {
                 0,
                 0,
                 "2d8");
+        super.setCr(0.125);
     }
 
     public void scimitar(Character other) {
@@ -36,5 +37,10 @@ public class Cultist extends Monster {
         else { //scimitar misses
             System.out.println(getName() + " attempts to use scimitar against " + other.getName() + " but misses.");
         }
+    }
+
+    @Override
+    public void attack(Character other) {
+        scimitar(other);
     }
 }

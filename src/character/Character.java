@@ -1,6 +1,6 @@
 package character;
 
-public class Character {
+public abstract class Character {
     private String name;
     private int armorClass;
     private int hitPoints;
@@ -21,6 +21,8 @@ public class Character {
         this.wisdom = wisdom;
         this.charisma = charisma;
     }
+
+    public abstract void attack(Character other);
 
     public boolean isAlive() {
         return hitPoints > 0;

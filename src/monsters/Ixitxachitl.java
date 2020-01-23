@@ -23,4 +23,9 @@ public class Ixitxachitl extends Monster {
             System.out.println(getName() + " tries to bite " + other.getName() + " but misses! There's another chance!");
         }
     }
+
+    @Override
+    public void attack(Character other) {
+
+    }
 }

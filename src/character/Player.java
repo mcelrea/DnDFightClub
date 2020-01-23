@@ -23,4 +23,9 @@ public class Player extends Character{
             System.out.println(getName() + " attempts to slash (shortsword) " + other.getName() + " but misses.");
         }
     }
+
+    @Override
+    public void attack(Character other) {
+        shortsword(other);
+    }
 }
