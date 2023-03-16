@@ -19,6 +19,8 @@ public class Main {
                 (Die.rollDie("1d20")-10)/2,
                 (Die.rollDie("1d20")-10)/2,
                 "1d10");
+        System.out.println("Temporary text lines");
+        System.out.println("You can remove these");
         System.out.print("Creating new player...");
         //Thread.sleep(1000);
         System.out.print("...");
